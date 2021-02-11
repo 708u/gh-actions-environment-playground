@@ -1,0 +1,20 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://example.com
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: hello world
+      run: |
+        echo "${{ secrets.PERIOD }} world!!"
