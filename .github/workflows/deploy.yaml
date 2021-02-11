@@ -17,4 +17,4 @@ jobs:
 
     - name: hello world
       run: |
-        echo "{{ secrets.PERIOD }} world!!"
+        echo "${{ secrets.PERIOD }} world!!"
