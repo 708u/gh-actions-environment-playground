@@ -10,7 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: develop
+      name: development
       url: https://example.com
     steps:
     - uses: actions/checkout@v2
