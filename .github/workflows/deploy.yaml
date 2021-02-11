@@ -9,7 +9,7 @@ on:
 deploy:
   runs-on: ubuntu-latest
   environment:
-    name: staging
+    name: develop
     url: https://example.com
   steps:
   - uses: actions/checkout@v2
