@@ -6,14 +6,15 @@ on:
       - main
       - develop
 
-deploy:
-  runs-on: ubuntu-latest
-  environment:
-    name: develop
-    url: https://example.com
-  steps:
-  - uses: actions/checkout@v2
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: develop
+      url: https://example.com
+    steps:
+    - uses: actions/checkout@v2
 
-  - name: hello world
-    run: |
-      echo "{{ secrets.PERIOD }} world!!"
+    - name: hello world
+      run: |
+        echo "{{ secrets.PERIOD }} world!!"
