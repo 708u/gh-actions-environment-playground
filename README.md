@@ -1,2 +1,2 @@
-# gh-action-environment-playground
+# gh-actions-environment-playground
 github actions environment public beta test,
