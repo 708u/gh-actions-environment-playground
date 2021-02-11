@@ -1,10 +1,9 @@
-name: deploy
+name: deploy-prod
 
 on:
   push:
     branches:
       - main
-      - develop
 
 jobs:
   deploy:
