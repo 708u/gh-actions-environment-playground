@@ -8,6 +8,5 @@ inputs:
 runs:
   using: composite
   steps:
-  - name: hello world
-    run: |
-      echo "${{ inputs.period }} world!!"
+    - run: echo "${{ inputs.period }} world!!"
+      shell: bash
