@@ -1,0 +1,12 @@
+name: deploy
+description: deploy all assets.
+inputs:
+  period:
+    description: time
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - run: echo "${{ inputs.period }} world!!"
+      shell: bash

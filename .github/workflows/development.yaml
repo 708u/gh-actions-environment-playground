@@ -1,19 +1,18 @@
-name: deploy-prod
+name: deploy-dev
 
 on:
   push:
     branches:
-      - main
+      - develop
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: production
+      name: development
       url: https://example.com
     steps:
     - uses: actions/checkout@v2
-
-    - name: hello world
-      run: |
-        echo "${{ secrets.PERIOD }} world!!"
+    - uses: ./.github/actions/deploy
+      with:
+        period: "${{ secrets.PERIOD }}"
