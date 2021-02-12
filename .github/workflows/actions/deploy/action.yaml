@@ -1,0 +1,10 @@
+name: deploy
+description: deploy all assets.
+runs:
+  using: composite
+  steps:
+  - uses: actions/checkout@v2
+
+  - name: hello world
+    run: |
+      echo "${{ secrets.PERIOD }} world!!"
