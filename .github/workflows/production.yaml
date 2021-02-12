@@ -13,7 +13,6 @@ jobs:
       url: https://example.com
     steps:
     - uses: actions/checkout@v2
-
-    - name: hello world
-      run: |
-        echo "${{ secrets.PERIOD }} world!!"
+    - uses: ./.github/actions/deploy
+      with:
+        period: "${{ secrets.PERIOD }}"
