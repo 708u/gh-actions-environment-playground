@@ -12,8 +12,4 @@ jobs:
       name: development
       url: https://example.com
     steps:
-    - uses: actions/checkout@v2
-
-    - name: hello world
-      run: |
-        echo "${{ secrets.PERIOD }} world!!"
+    - uses: ./.github/workflows/actions/deploy
